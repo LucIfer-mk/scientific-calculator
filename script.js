@@ -1,7 +1,4 @@
 document.getElementById("display").value = "";
-
-
-
 document.getElementById("clearscreen").onclick = function() {
   document.getElementById("display").value = "";
 }
@@ -52,7 +49,6 @@ document.getElementById("six").onclick = function() {
 }   
 document.getElementById("pie").onclick = function() {
     document.getElementById("display").value += "π";
-
 }
 document.getElementById("tan").onclick = function() {
     document.getElementById("display").value += "tan(";
@@ -70,8 +66,29 @@ document.getElementById("three").onclick = function() {
     document.getElementById("display").value += "3";
 }
 document.getElementById("square").onclick = function() {
-    document.getElementById("display").value += "x^2";
+    document.getElementById("display").value += "^2";
+}
+document.getElementById("xpowy").onclick = function() {
+    document.getElementById("display").value += "^";
+}
+document.getElementById("zero").onclick = function() {  
+    document.getElementById("display").value += "0";
+}
+document.getElementById("plus").onclick = function() {
+    document.getElementById("display").value += "+";
+}
+document.getElementById("dot").onclick = function() {
+    document.getElementById("display").value += ".";
 }
 document.getElementById("squrt").onclick = function() {
     document.getElementById("display").value += "√";
 }
+document.getElementById("e").onclick = function() {
+    document.getElementById("display").value += "e";
+}
+document.getElementById("equal").onclick = function() {
+    document.getElementById("display").value = eval(document.getElementById("display").value);
+}
+
+
+
